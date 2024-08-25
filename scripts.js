@@ -38,11 +38,14 @@ document.addEventListener('DOMContentLoaded', () => {
         titleElement.style.display = 'none'; 
         subtitleElement.style.display = 'none';
 
+        // Set text alignment to left after submission
+        resultDiv.style.textAlign = 'left';
+
         if (team) {
             if (team.Keterangan === "Lolos") {
                 resultDiv.innerHTML = `
                     <h1>Hello, ${team.NamaTim}!</h1>
-                    <h3><strong class = "approve"> Selamat! </strong> Tim kamu berhasil melangkah ke babak selanjutnya: <strong style="font-style: italic;"> Semifinal. </strong></h3>
+                    <h3><strong class="approve"> Selamat! </strong> Tim kamu berhasil melangkah ke babak selanjutnya: <strong style="font-style: italic;"> Semifinal. </strong></h3>
                     <p>Kami mengharapkan konfirmasi tim kamu dengan cara menghubungi <strong style="font-style: italic;">Contact Person</strong> di bawah ini:<br>
                     <p>
                         <strong>Fairuz Afghan Bahari</strong><br>
@@ -54,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
             } else if (team.Keterangan === "Tidak") {
                 resultDiv.innerHTML = `
-                    <h1>Helloo, ${team.NamaTim}!</h1>
+                    <h1>Hello, ${team.NamaTim}!</h1>
                     <h3><span class="reject">Maaf,</span> dengan berat hati kami mengumumkan bahwa tim kamu gagal melangkah baik ke dalam babak Semifinal maupun <em>waiting list.</em></h3>
                     <p>Namun, jangan berkecil hati karena masih terdapat banyak kesempatan di luar sana yang dapat mewadahi skill dan potensi kamu!</p>
                     <p><em>We do like to wish your tim good luck for the future and hope you will reach your success soon!</em></p>
