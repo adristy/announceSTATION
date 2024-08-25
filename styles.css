@@ -169,6 +169,7 @@ body {
         width: 100%;
         height: 100%; /* Ensure it takes the full viewport height */
         box-sizing: border-box;
+        font-size: 12px;
     }
 
     .header {
@@ -201,6 +202,7 @@ body {
         box-sizing: border-box;
         height: auto;
         min-height: calc(100vh - 60px); /* Adjust height to fit within the screen */
+        top: -100px;
     }
 
     .announcement-section {
