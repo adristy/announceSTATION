@@ -1,0 +1,20 @@
+[
+    {
+        "NoPeserta": 1111,
+        "NamaTim": "Lalayeye",
+        "Keterangan": "Lolos",
+        "Rank": 1
+    },
+    {
+        "NoPeserta": 2222,
+        "NamaTim": "Lalalala",
+        "Keterangan": "Tidak",
+        "Rank": 100
+    },
+    {
+        "NoPeserta": 3333,
+        "NamaTim": "aaaa",
+        "Keterangan": "Waiting",
+        "Rank": 6
+    }
+]
