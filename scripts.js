@@ -74,7 +74,13 @@ document.addEventListener('DOMContentLoaded', () => {
             resultDiv.innerHTML = `
                 <h1>Maaf!</h1>
                 <p>Nomor Peserta yang Anda masukkan <strong style="color: red;">tidak ditemukan</strong>. Silakan periksa kembali nomor yang Anda masukkan.</p>
-                <p>Jika Anda merasa ini adalah kesalahan, hubungi panitia di <a href="mailto:contact@example.com">contact@example.com</a>.</p>
+                <p>Jika Anda merasa ini adalah kesalahan, hubungi panitia di </p>
+                <p>
+                        <strong>Fairuz Afghan Bahari</strong><br>
+                        WA : 0815 1528 4076 / Line : fairuzafghann<br>
+                        <strong>Mawar Jannah Ghaliyah</strong><br>
+                        WA : 0859 3344 7994 / Line : mawarjannah
+                    </p>
             `;
         }
     });
