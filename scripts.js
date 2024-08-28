@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     resultDiv.id = 'result';
     resultDiv.style.color = 'white'; 
-    resultDiv.style.marginTop = '20px'; 
+    resultDiv.style.marginTop = '10px'; 
     document.querySelector('.announcement-section').appendChild(resultDiv);
 
     announcementForm.addEventListener('submit', function(event) {
@@ -42,10 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
         resultDiv.style.textAlign = 'left';
 
         if (team) {
+            const nilai = team.Nilai; // Mengambil nilai dari database
             if (team.Keterangan === "Lolos") {
                 resultDiv.innerHTML = `
                     <h1>Hello, ${team.NamaTim}!</h1>
                     <h3><strong class="approve"> Selamat! </strong> Tim kamu berhasil melangkah ke babak selanjutnya: <strong style="font-style: italic;"> Semifinal. </strong></h3>
+                    <p>Nilai tim kamu: <strong>${nilai}</strong> <em>(Hasil Akumulasi Nilai Peserta dengan Switch Tab yang tercatat)</em></p>
                     <p>Kami mengharapkan konfirmasi tim kamu dengan cara menghubungi <strong style="font-style: italic;">Contact Person</strong> di bawah ini:<br>
                     <p>
                         <strong>Raihan Abiyyu Briantama</strong><br>
@@ -54,13 +56,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         WA: <a href="https://wa.me/6288803505896">0888 0350 5896</a>
                     </p>
 
-
                     <p><em>See you soon in Surabaya</em> ^-^</p>
                 `;
             } else if (team.Keterangan === "Tidak") {
                 resultDiv.innerHTML = `
                     <h1>Hello, ${team.NamaTim}!</h1>
                     <h3><span class="reject">Maaf,</span> dengan berat hati kami mengumumkan bahwa tim kamu gagal melangkah baik ke dalam babak Semifinal maupun <em>waiting list.</em></h3>
+                    <p>Nilai tim kamu: <strong>${nilai}</strong> <em>(Hasil Akumulasi Nilai Peserta dengan Switch Tab yang tercatat)</em></p>
                     <p>Namun, jangan berkecil hati karena masih terdapat banyak kesempatan di luar sana yang dapat mewadahi skill dan potensi kamu!</p>
                     <p><em>We do like to wish your tim good luck for the future and hope you will reach your success soon!</em></p>
                 `;
@@ -68,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 resultDiv.innerHTML = `
                     <h1>Hello, ${team.NamaTim}!</h1>
                     <h3>Kami dari Pekan Raya Statistika 2024 ingin mengumumkan bahwa tim kamu masuk ke dalam <span class="waiting" style="font-style: italic;">waiting list semifinal</span> STATION 2024.</h3>
+                    <p>Nilai tim kamu: <strong>${nilai}</strong> <em>(Hasil Akumulasi Nilai Peserta dengan Switch Tab yang tercatat)</em></p>
                     <p>Kami akan menghubungi perwakilan dari tim kamu jika terdapat <em>slot</em> yang tersedia sebagai <em>Semifinalist</em>.</p>
                     <p><em>Please wait for the good news until <strong>31st August 2024, at 23:59</strong></em> ^-^</p>
                 `;
