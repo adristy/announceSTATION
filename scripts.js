@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <strong>Fairuz Afghan Bahari</strong><br>
                         WA: <a href="https://wa.me/6281515284076">0815 1528 4076</a><br>
                         <strong>Mawar Jannah Ghaliyah</strong><br>
-                        WA: <a href="https://wa.me/6285933447994>0859 3344 7994</a><br>
+                        WA: <a href="https://wa.me/6285933447994">0859 3344 7994</a><br>
                     </p>
             `;
         }
