@@ -48,12 +48,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h3><strong class="approve"> Selamat! </strong> Tim kamu berhasil melangkah ke babak selanjutnya: <strong style="font-style: italic;"> Semifinal. </strong></h3>
                     <p>Kami mengharapkan konfirmasi tim kamu dengan cara menghubungi <strong style="font-style: italic;">Contact Person</strong> di bawah ini:<br>
                     <p>
-                        <strong>Fairuz Afghan Bahari</strong><br>
-                        WA : 0815 1528 4076 / Line : fairuzafghann<br>
-                        <strong>Mawar Jannah Ghaliyah</strong><br>
-                        WA : 0859 3344 7994 / Line : mawarjannah
+                        <strong>Raihan Abiyyu Briantama</strong><br>
+                        WA: <a href="https://wa.me/6282116132950">0821 1613 2950</a><br>
+                        <strong>Gilang Hanif Hendrawan</strong><br>
+                        WA: <a href="https://wa.me/6288803505896">0888 0350 5896</a>
                     </p>
-                    <p style="font-style: italic;">See you soon in Surabaya!</p>
+
+
+                    <p><em>See you soon in Surabaya</em> ^-^</p>
                 `;
             } else if (team.Keterangan === "Tidak") {
                 resultDiv.innerHTML = `
@@ -66,8 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 resultDiv.innerHTML = `
                     <h1>Hello, ${team.NamaTim}!</h1>
                     <h3>Kami dari Pekan Raya Statistika 2024 ingin mengumumkan bahwa tim kamu masuk ke dalam <span class="waiting" style="font-style: italic;">waiting list semifinal</span> STATION 2024.</h3>
-                    <p>Kami akan menghubungi perwakilan dari tim kamu jika terdapat <em>spot</em> yang tersedia sebagai <em>Semifinalist</em>.</p>
-                    <p style="font-style: italic;">Please wait for the good news until <strong>September 2nd!</strong></p>
+                    <p>Kami akan menghubungi perwakilan dari tim kamu jika terdapat <em>slot</em> yang tersedia sebagai <em>Semifinalist</em>.</p>
+                    <p><em>Please wait for the good news until <strong>31st August 2024, at 23:59</strong></em> ^-^</p>
                 `;
             }
         } else {
@@ -77,9 +79,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>Jika Anda merasa ini adalah kesalahan, hubungi panitia di </p>
                 <p>
                         <strong>Fairuz Afghan Bahari</strong><br>
-                        WA : 0815 1528 4076 / Line : fairuzafghann<br>
+                        WA: <a href="https://wa.me/6281515284076">0815 1528 4076</a><br>
                         <strong>Mawar Jannah Ghaliyah</strong><br>
-                        WA : 0859 3344 7994 / Line : mawarjannah
+                        WA: <a href="https://wa.me/6285933447994>0859 3344 7994</a><br>
                     </p>
             `;
         }
